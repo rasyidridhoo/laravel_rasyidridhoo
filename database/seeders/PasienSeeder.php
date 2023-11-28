@@ -32,6 +32,26 @@ class PasienSeeder extends Seeder
                 'alamat' => 'Bandung Barat',
                 'telepon' => '08421xxx',
             ],
+            [
+                'nama' => 'Wayan',
+                'alamat' => 'Bali',
+                'telepon' => '08151xxx',
+            ],
+            [
+                'nama' => 'Galuh',
+                'alamat' => 'Jakarta',
+                'telepon' => '08461xxx',
+            ],
+            [
+                'nama' => 'Kukuh',
+                'alamat' => 'Binjai',
+                'telepon' => '08352xxx',
+            ],
+            [
+                'nama' => 'Salim',
+                'alamat' => 'Brebes',
+                'telepon' => '08231xxx',
+            ],
         ];
 
         foreach ($pasiens as $pasien) {
@@ -39,7 +59,7 @@ class PasienSeeder extends Seeder
                 'nama' => $pasien['nama'],
                 'alamat' => $pasien['alamat'],
                 'telepon' => $pasien['telepon'],
-                'rumahsakit_id' => rand(1, 4),
+                'rumahsakit_id' => rand(1, 3),
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
